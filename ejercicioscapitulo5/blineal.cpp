@@ -3,7 +3,6 @@
 #include <vector>    
 #include <algorithm> 
 #include <cstdlib>   
-//Función búsqueda lineal
 template <typename T>
 int busqueda_lineal(const std::vector<T>& arr, T objetivo) {
     auto it = std::find(arr.begin(), arr.end(), objetivo);
@@ -15,9 +14,7 @@ int main() {
     int objetivo1 = 15;
     int indice;
     std::cout << "Conjunto de datos: {";
-    for (int x : datos) {
-        std::cout << x << (x == datos.back() ? "" : ", ");
-    }
+    for (int x : datos) {std::cout << x << (x == datos.back() ? "" : ", ");}
     std::cout << "}\n";
     indice = busqueda_lineal(datos, objetivo1);
     if (indice != -1) {

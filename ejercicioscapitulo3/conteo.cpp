@@ -1,6 +1,5 @@
 // fichero conteo.cpp 
 // Este ejercicio nos presenta la conversión de cadenas a letras mayúsculas y contar sus vocales
-
 #include <iostream> 
 #include <cctype>   
 #include <climits>  
@@ -19,7 +18,6 @@ void convertir_a_mayusculas(char s[]) {
     }
 
 }
-
 int contar_vocales(const char s[]) {
 
     int contador = 0;

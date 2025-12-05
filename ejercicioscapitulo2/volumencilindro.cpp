@@ -1,5 +1,4 @@
 // fichero volumencilindro.cpp 
-// Este programa calcula el volumen de un cilindro
 #include <iostream>
 #include <cmath> 
 #include <cstdlib>
@@ -20,8 +19,7 @@ int main() {
         std::cout << "Error: El diámetro y la altura debe ser un número > que 0\n";
         return EXIT_FAILURE;
     }    
-    R = D / 2.0; 
-    V = PI * R * R * H;
+    R = D / 2.0;  V = PI * R * R * H;
     std::cout << "El volumen del cilindro es de " << V << " m^3\n"; 
     return EXIT_SUCCESS;
 }

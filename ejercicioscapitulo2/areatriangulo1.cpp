@@ -4,9 +4,7 @@
 #include <cstdlib>
 #include <iomanip>
 using namespace std;
-
 int main() {
-
     double a,b,area;
     cout<<"Introduce la base del triángulo rectángulo:";
     if (!(cin >> b)) {

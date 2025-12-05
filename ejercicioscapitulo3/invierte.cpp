@@ -3,7 +3,6 @@
 #include <iostream> 
 #include <cstdlib>
 constexpr int MAX_SIZE=100; 
-
 void leer_cadena(char s[], int size) {
    std::cin.getline(s, size);
 }

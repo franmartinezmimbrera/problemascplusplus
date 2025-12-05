@@ -3,7 +3,6 @@
 #include <iostream>
 #include <cstdlib>
 using namespace std;
-
 int main() {
 
     double l1,l2,l3;
@@ -23,12 +22,10 @@ int main() {
         cout<<"Error: la entrada no es un número válido" <<endl;
         EXIT_FAILURE;
     };    
-
     if (l1 + l2 <= l3 || l1 + l3 <= l2 || l2 + l3 <= l1) {
         cout << "\nError Geométrico: Los lados NO forman un triángulo válido.\n";
         return EXIT_FAILURE;
     }
-
     if (l1==l2 and l2==l3){
         cout<< "El Triangulo es Equilatero";
     }
@@ -42,6 +39,5 @@ int main() {
              }
          }
     }
-    
     return EXIT_SUCCESS;
 }

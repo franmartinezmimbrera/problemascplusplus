@@ -14,10 +14,7 @@ int main() {
             numero = 0.0; 
             continue; 
         }
-        if (numero != -50.0){ 
-           suma = suma + numero;
-        }   
-        
+        if (numero != -50.0){ suma = suma + numero;}   
     } while (numero != -50.0);
     std::cout << "La suma total de los números introducidos es: " << suma << std::endl;    
     return EXIT_SUCCESS;

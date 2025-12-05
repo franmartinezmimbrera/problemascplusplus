@@ -3,7 +3,6 @@
 #include <iostream> 
 #include <limits>   
 #include <cstdlib>
-
 //Función factorial iterativa
 long long factorial(long long n) {
     if (n == 0 || n == 1) {return 1;}
@@ -13,7 +12,6 @@ long long factorial(long long n) {
     }
     return resultado;
 }
-
 //Función para calcular un número combinatorio
 long long nCr(long long n, long long r) {
     if (r < 0 || r > n) {return 0;}
@@ -27,7 +25,6 @@ long long nCr(long long n, long long r) {
     }
     return fact_n / (fact_r * fact_n_minus_r);
 }
-
 //Funció para calcular la potencia de una base y un exponente cualquiera dado
 long long calcular_potencia(long long base, int exponente) {
     long long resultado = 1;
@@ -39,7 +36,6 @@ long long calcular_potencia(long long base, int exponente) {
     }
     return resultado;
 }
-
 // Calcula la expansión del Binomio de Newton (a + b)^n.
 void binomio_de_newton(long long a, long long b, int n) {
     if (n < 0 || n > 20) { 
@@ -65,7 +61,6 @@ void binomio_de_newton(long long a, long long b, int n) {
     }
     std::cout << "Valor Total del Binomio de Newton de (a+b)^n: " << suma << "\n";
 }
-
 int main() {
    
     long long a, b;

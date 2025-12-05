@@ -1,5 +1,5 @@
 // fichero nkbits.cpp 
-// Procedimiento que escribe por pantalla los últimos k bits de un número entero.
+// Procedimiento que escribe los últimos k bits de un número entero.
 #include <iostream> 
 #include <climits> 
 #include <cstdlib>
@@ -18,7 +18,6 @@ void mostrar_ultimos_k_bits(int numero, int k) {
     std::cout << "\n";
 }
 int main() {
-
     int num1 = 45; 
     mostrar_ultimos_k_bits(num1, 8); 
     return EXIT_SUCCESS;

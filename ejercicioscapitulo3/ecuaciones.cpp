@@ -1,13 +1,10 @@
 // fichero ecuaciones.cpp 
-// Este programa resuelve ecuaciones de segundo grado por la fórmula general para números reales 
+// Resuelve ecuaciones de segundo grado por la fórmula general para números R 
 #include <iostream>
 #include <cmath>
 #include <cstdlib>
 int main(void) {
-
-    double a,b,c,d;
-    double x1,x2;
-
+    double a,b,c,d,x1,x2;
     do {
         std::cout << "Ingrese coeficiente a: ";
         if (!(std::cin >> a)) {
@@ -17,7 +14,6 @@ int main(void) {
         if (a == 0)
             std::cout << "El coeficiente 'a' no puede ser cero.\n";
     } while (a == 0);
-
     std::cout<<"Ingrese coeficiente b: ";
     if (!(std::cin>>b)){
         std::cerr<<"Error: la entrada no es un número válido" <<std::endl;
@@ -28,7 +24,6 @@ int main(void) {
         std::cerr<<"Error: la entrada no es un número válido" <<std::endl;
         return EXIT_FAILURE;
     };    
-
     d = pow(b, 2)-4*a*c;
     if (d > 0) {
        x1 = (-b+sqrt(d))/(2*a);
@@ -42,6 +37,5 @@ int main(void) {
     }
     else
         std::cout<<"La ecuacion no tiene soluciones reales \n";
-
     return EXIT_SUCCESS;
 }   
