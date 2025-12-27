@@ -1,5 +1,5 @@
 // fichero tipotriangulo.cpp 
-// Este programa calcula el tipo de tri·ngulo en funciÛn de los lados
+// Este programa calcula el tipo de tri√°ngulo en funci√≥n de los lados
 #include <iostream>
 #include <cstdlib>
 using namespace std;
@@ -7,36 +7,30 @@ int main() {
 
     double l1,l2,l3;
     
-    cout<<"Introduce lo que mide el primer lado del tri·ngulo: ";
+    cout<<"Introduce lo que mide el primer lado del tri√°ngulo: ";
     if (!(cin>>l1)){
-        cout<<"Error: la entrada no es un n˙mero v·lido" <<endl;
+        cout<<"Error: la entrada no es un n√∫mero v√°lido" <<endl;
         EXIT_FAILURE;
     };    
-    cout<<"Introduce lo que mide el segundo lado del tri·ngulo: ";
+    cout<<"Introduce lo que mide el segundo lado del tri√°ngulo: ";
     if (!(cin>>l2)){
-        cout<<"Error: la entrada no es un n˙mero v·lido" <<endl;
+        cout<<"Error: la entrada no es un n√∫mero v√°lido" <<endl;
         EXIT_FAILURE;
     };    
-    cout<<"Introduce lo que mide el tercer lado del tri·ngulo: ";
+    cout<<"Introduce lo que mide el tercer lado del tri√°ngulo: ";
     if (!(cin>>l3)){
-        cout<<"Error: la entrada no es un n˙mero v·lido" <<endl;
+        cout<<"Error: la entrada no es un n√∫mero v√°lido" <<endl;
         EXIT_FAILURE;
     };    
     if (l1 + l2 <= l3 || l1 + l3 <= l2 || l2 + l3 <= l1) {
-        cout << "\nError GeomÈtrico: Los lados NO forman un tri·ngulo v·lido.\n";
+        cout << "\nError Geom√©trico: Los lados NO forman un tri√°ngulo v√°lido.\n";
         return EXIT_FAILURE;
     }
-    if (l1==l2 and l2==l3){
-        cout<< "El Triangulo es Equilatero";
-    }
+    if (l1==l2 and l2==l3){cout<< "El Triangulo es Equilatero";}
     else{
-         if (l1==l2 or l1==l3 or l3==l2){
-             cout<<"El Triangulo es Isoceles";
-         }
+         if (l1==l2 or l1==l3 or l3==l2){cout<<"El Triangulo es Isoceles";}
          else{
-             if (l1!=l2 or l1!=l3 or l3!=l2){
-               cout<<"El Triangulo es Escaleno";
-             }
+             if (l1!=l2 or l1!=l3 or l3!=l2){cout<<"El Triangulo es Escaleno";}
          }
     }
     return EXIT_SUCCESS;

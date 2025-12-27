@@ -3,10 +3,10 @@
 #include <vector>
 #include <type_traits>
 #include <cstdlib>
-// Función de búsqueda por interpolación
+// FunciÃ³n de bÃºsqueda por interpolaciÃ³n
 template <typename T>
 int busqueda_interpolacion(const std::vector<T>& arr, T objetivo) {
-    static_assert(std::is_arithmetic<T>::value, "Interpolación requiere tipo numérico");
+    static_assert(std::is_arithmetic<T>::value, "InterpolaciÃ³n requiere tipo numÃ©rico");
     int bajo = 0;
     int alto = arr.size() - 1;
     int pos;
@@ -35,12 +35,12 @@ int main() {
     int objetivo1 = 70;
     int indice = busqueda_interpolacion(datos_ordenados, objetivo1);
     std::cout << "\nResultado para " << objetivo1 << ": "
-              << (indice != -1 ? "Encontrado en el índice " + std::to_string(indice)
+              << (indice != -1 ? "Encontrado en el Ã­ndice " + std::to_string(indice)
                                : "No encontrado") << ".\n";
     int objetivo2 = 45;
     indice = busqueda_interpolacion(datos_ordenados, objetivo2);
     std::cout << "Resultado para " << objetivo2 << ": "
-              << (indice != -1 ? "Encontrado en el índice " + std::to_string(indice)
+              << (indice != -1 ? "Encontrado en el Ã­ndice " + std::to_string(indice)
                                : "No encontrado") << ".\n";
     return EXIT_SUCCESS;
 }

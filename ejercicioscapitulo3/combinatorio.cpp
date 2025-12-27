@@ -1,9 +1,9 @@
 // fichero combinatorio.cpp 
-// Calcula el número combinatorio C(n, r) o n sobre r, usando factoriales.
+// Calcula el nÃºmero combinatorio C(n, r) o n sobre r, usando factoriales.
 #include <iostream> 
 #include <limits>   
 #include <cstdlib>
-//Función factorial iterativa
+//FunciÃ³n factorial iterativa
 long long factorial(long long n) {
     if (n == 0 || n == 1) {return 1;}
     long long resultado = 1;
@@ -12,7 +12,7 @@ long long factorial(long long n) {
     }
     return resultado;
 }
-//Función para calcular un número combinatorio
+//FunciÃ³n para calcular un nÃºmero combinatorio
 long long nCr(long long n, long long r) {
     if (r < 0 || r > n) {return 0;}
     long long fact_n = factorial(n);
@@ -31,7 +31,7 @@ int main() {
 
     std::cout << "Introduce un numero entero no negativo para N (max 20 para precision): ";
     if (!(std::cin >> N)) {
-        std::cerr << "Error: Entrada no válida para N.\n";
+        std::cerr << "Error: Entrada no vÃ¡lida para N.\n";
         return EXIT_FAILURE;
     }
     if (N < 0) {
@@ -39,11 +39,11 @@ int main() {
         return EXIT_FAILURE;
     }
     if (N > 20) {
-        std::cout << "Advertencia: El factorial de N=" << N << " causará desbordamiento.\n";
+        std::cout << "Advertencia: El factorial de N=" << N << " causarÃ¡ desbordamiento.\n";
     }
     std::cout << "Introduce un numero entero no negativo para M (max 20 para precision): ";
     if (!(std::cin >> M)) {
-        std::cerr << "Error: Entrada no válida para M.\n";
+        std::cerr << "Error: Entrada no vÃ¡lida para M.\n";
         return EXIT_FAILURE;
     }
     if (M < 0) {
@@ -51,15 +51,15 @@ int main() {
         return EXIT_FAILURE;
     }
     if (M > 20) {
-        std::cout << "Advertencia: El factorial de M=" << M << " causará desbordamiento.\n";
+        std::cout << "Advertencia: El factorial de M=" << M << " causarÃ¡ desbordamiento.\n";
     } 
     long long combinaciones = nCr(N, M);
     if (combinaciones > 0) {
-        std::cout << "El número combinatorio de " << N << " sobre " << M << " es: " << combinaciones << "\n"; 
+        std::cout << "El nÃºmero combinatorio de " << N << " sobre " << M << " es: " << combinaciones << "\n"; 
     } else if (combinaciones == 0) {
-        std::cout << "El número combinatorio de " << N << " sobre " << M << " es 0 (M fuera de rango 0 <= M <= N).\n";
+        std::cout << "El nÃºmero combinatorio de " << N << " sobre " << M << " es 0 (M fuera de rango 0 <= M <= N).\n";
     } else if (combinaciones == -1) {
-        std::cout << "No se pudo calcular el número combinatorio de " << N << " sobre " << M << " debido a desbordamiento.\n";
+        std::cout << "No se pudo calcular el nÃºmero combinatorio de " << N << " sobre " << M << " debido a desbordamiento.\n";
     }
     return EXIT_SUCCESS;
 }

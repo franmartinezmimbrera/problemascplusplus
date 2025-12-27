@@ -18,7 +18,7 @@ int main() {
     std::cout << "}\n";
     indice = busqueda_lineal(datos, objetivo1);
     if (indice != -1) {
-        std::cout << "Resultado para " << objetivo1 << ": Encontrado en índice " << indice << ".\n";
+        std::cout << "Resultado para " << objetivo1 << ": Encontrado en Ã­ndice " << indice << ".\n";
     } else {
        std::cout << "Resultado para " << objetivo1 << ": No encontrado\n";
     }

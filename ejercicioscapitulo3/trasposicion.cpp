@@ -1,5 +1,5 @@
 // fichero trasposicion.cpp 
-// Función para trasponer una matriz MxN
+// FunciÃ³n para trasponer una matriz MxN
 #include <iostream>
 #include <iomanip>
 #include <cstddef> 

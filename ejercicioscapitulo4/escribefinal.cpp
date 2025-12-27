@@ -7,18 +7,18 @@
 
 int main() {
     
-    std::ofstream archivo("datos.txt", std::ios::app); 
+    std::ofstream fichero("datos.txt", std::ios::app); 
 
-    if (!archivo.is_open()) {
-        std::cerr << "Error al abrir el archivo datos.txt en modo append" << std::endl;
+    if (!fichero.is_open()) {
+        std::cerr << "Error al abrir el fichero datos.txt en modo append" << std::endl;
         return EXIT_FAILURE;
     }
 
-    archivo << "Esta es la línea AÑADIDIDA al final (Append)" << std::endl;
+    fichero << "Esta es la lÃ­nea AÃ‘ADIDIDA al final (Append)" << std::endl;
 
-    archivo.close(); 
+    fichero.close(); 
     
-    std::cout << "\nSe ha añadido una línea al final de 'datos.txt'." << std::endl;
+    std::cout << "\nSe ha aÃ±adido una lÃ­nea al final de 'datos.txt'." << std::endl;
     
     return EXIT_SUCCESS;
 }

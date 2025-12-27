@@ -1,5 +1,5 @@
 // fichero areatriangulo2.cpp 
-// Este programa calcula el ¡rea de un tri·ngulo equil·tero a partir de uno de sus lados
+// Este programa calcula el √Årea de un tri√°ngulo equil√°tero a partir de uno de sus lados
 #include <iostream>
 #include <cmath> 
 #include <cstdlib>
@@ -7,19 +7,19 @@
 int main() {
 
     double l, area;
-    std::cout << "Introduce un lado del tri·ngulo equil·tero: ";
+    std::cout << "Introduce un lado del tri√°ngulo equil√°tero: ";
     
     if (!(std::cin >> l)) {
-        std::cout << "Error: El valor debe ser un n˙mero.\n";
+        std::cout << "Error: El valor debe ser un n√∫mero.\n";
         return EXIT_FAILURE; 
     } 
     if (l <= 0) {
-        std::cout << "Error: El valor debe ser un n˙mero mayor que 0.\n";
+        std::cout << "Error: El valor debe ser un n√∫mero mayor que 0.\n";
         return EXIT_FAILURE;
     }    
     
     area = (std::sqrt(3.0) / 4.0) * l * l;    
-    std::cout << "El ¡rea del tri·ngulo equil·tero de lado " << l << " es: " << area << "\n";
+    std::cout << "El √Årea del tri√°ngulo equil√°tero de lado " << l << " es: " << area << "\n";
     
     return EXIT_SUCCESS;
 }

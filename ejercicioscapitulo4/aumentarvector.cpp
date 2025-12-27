@@ -13,7 +13,7 @@ int main() {
     try {
         vector = new int[N_inicial];
     } catch (const std::bad_alloc& e) {
-        std::cerr << "Error: Falló la asignación inicial de memoria." << e.what() << std::endl;
+        std::cerr << "Error: FallÃ³ la asignaciÃ³n inicial de memoria." << e.what() << std::endl;
         return EXIT_FAILURE;
     }
 
@@ -26,8 +26,8 @@ int main() {
         std::cout << vector[i] << " ";
     std::cout << std::endl;
 
-    // Aquí hacemos una simulación de realloc porque 
-    // en C++ daría problemas al usar New y Delete 
+    // AquÃ­ hacemos una simulaciÃ³n de realloc porque 
+    // en C++ darÃ­a problemas al usar New y Delete 
     int *nuevo_vector = nullptr;
 
     try {
@@ -35,7 +35,7 @@ int main() {
         std::copy(vector, vector + N_inicial, nuevo_vector);
 
     } catch (const std::bad_alloc& e) {
-        std::cerr << "Error: Falló la reasignación de memoria. Los datos originales se conservan." << e.what() << std::endl;
+        std::cerr << "Error: FallÃ³ la reasignaciÃ³n de memoria. Los datos originales se conservan." << e.what() << std::endl;
         delete[] vector; 
         return EXIT_FAILURE;
     }

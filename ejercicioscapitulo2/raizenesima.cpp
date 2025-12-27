@@ -1,5 +1,5 @@
 // fichero raizenesima.cpp
-// Este programa calcula la raíz n-ésima de un número 
+// Este programa calcula la raÃ­z n-Ã©sima de un nÃºmero 
 #include <iostream>
 #include <cmath>
 #include <cstdlib>
@@ -7,23 +7,23 @@
 int main() {
 
     double numero, resultado; int exponente; 
-    std::cout << "Introduce el número a cálcular la raíz: ";
+    std::cout << "Introduce el nÃºmero a cÃ¡lcular la raÃ­z: ";
     if (!(std::cin >> numero)) {
-        std::cout << "Error: El valor debe de ser un número.\n";
+        std::cout << "Error: El valor debe de ser un nÃºmero.\n";
         return EXIT_FAILURE; 
     } 
 
-    std::cout << "Introduce exponente de raíz(un entero, ej: 2, 3..):";
+    std::cout << "Introduce exponente de raÃ­z(un entero, ej: 2, 3..):";
     if (!(std::cin >> exponente)) {
-        std::cout << "Error: El valor debe de ser un número entero.\n";
+        std::cout << "Error: El valor debe de ser un nÃºmero entero.\n";
         return EXIT_FAILURE; 
     } 
     if (exponente == 0) {
-        std::cout << "Error: El exponente de la raíz no puede ser 0\n";
+        std::cout << "Error: El exponente de la raÃ­z no puede ser 0\n";
         return EXIT_FAILURE;
     }
     if (numero < 0.0 && exponente % 2 == 0) {
-        std::cout << "Error: Imposible cálculo de raíz par de un número < 0 en R\n";
+        std::cout << "Error: Imposible cÃ¡lculo de raÃ­z par de un nÃºmero < 0 en R\n";
         return EXIT_FAILURE;
     }
 
@@ -32,7 +32,7 @@ int main() {
         resultado = -resultado;
     }
 
-    std::cout << "La raíz " << exponente << " ésima de " << numero << " es: " << resultado << std::endl;    
+    std::cout << "La raÃ­z " << exponente << " Ã©sima de " << numero << " es: " << resultado << std::endl;    
 
     return EXIT_SUCCESS;
 }

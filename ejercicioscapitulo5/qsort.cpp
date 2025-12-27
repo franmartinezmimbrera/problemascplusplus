@@ -6,6 +6,7 @@
 
 template <typename T>
 int particion(std::vector<T>& arr, int bajo, int alto) {
+    
     T pivote = arr[alto];
     int i = (bajo - 1); 
 
@@ -18,7 +19,9 @@ int particion(std::vector<T>& arr, int bajo, int alto) {
     std::swap(arr[i + 1], arr[alto]);
     return (i + 1);
 }
-// Función 'quicksort' 
+
+// FunciÃ³n 'quicksort' 
+
 template <typename T>
 void quicksort(std::vector<T>& arr, int bajo, int alto) {
     if (bajo < alto) {
@@ -27,6 +30,7 @@ void quicksort(std::vector<T>& arr, int bajo, int alto) {
         quicksort(arr, pi + 1, alto); 
     }
 }
+
 int main() {
 
     std::vector<int> datos = {10, 70, 8, 90, 1000, 5};

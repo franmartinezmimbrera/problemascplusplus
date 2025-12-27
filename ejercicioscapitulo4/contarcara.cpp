@@ -5,14 +5,14 @@
 #include <cctype>    
 // Ejemplo para contar caracteres y palabras 
 int main() {
-    std::ifstream archivo("datos.txt"); 
+    std::ifstream fichero("datos.txt"); 
     int contador_caracteres = 0, contador_palabras = 0;
     int dentro_de_palabra = 0 , caracter; 
-    if (!archivo.is_open()) {
-        std::cerr << "Error al abrir archivo datos.txt" << std::endl;
+    if (!fichero.is_open()) {
+        std::cerr << "Error al abrir fichero datos.txt" << std::endl;
         return EXIT_FAILURE; 
     }
-    while ((caracter = archivo.get()) != EOF) {
+    while ((caracter = fichero.get()) != EOF) {
         contador_caracteres++; 
         if (std::isspace(caracter)) {
             dentro_de_palabra = 0;
@@ -23,8 +23,8 @@ int main() {
             }
         }
     }
-    archivo.close();
-    std::cout << "Total caracteres leídos: " << contador_caracteres << std::endl;
+    fichero.close();
+    std::cout << "Total caracteres leÃ­dos: " << contador_caracteres << std::endl;
     std::cout << "Total palabras: " << contador_palabras << std::endl;    
     return EXIT_SUCCESS;
 }

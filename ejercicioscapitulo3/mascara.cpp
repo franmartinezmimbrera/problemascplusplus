@@ -1,22 +1,18 @@
 // fichero mascara.cpp
-// Invierte (cambia 0->1 y 1->0) los ˙ltimos k bits de un n˙mero entero
+// Invierte (cambia 0->1 y 1->0) los √∫ltimos k bits de un n√∫mero entero
 #include <iostream>
 #include <climits>
-#include <cstdlib>
 long long invertir_ultimos_k_bits(long long numero, int k) {
-
     const int tamano_ll = sizeof(long long) * CHAR_BIT;
     if (k <= 0) return numero;
     if (k >= tamano_ll) return ~numero; // invierte todos los bits
-    unsigned long long mascara = (1ULL << k) - 1; // m·scara de k bits
+    unsigned long long mascara = (1ULL << k) - 1; // m√°scara de k bits
     return numero ^ mascara;
 }
 int main() {
-    long long num = 45;     
-    int k = 4;       
+    long long num = 45; int k = 4;       
     long long resultado = invertir_ultimos_k_bits(num, k);
-    std::cout << "N˙mero original: " << num << " (Binario: ...00101101)\n";
+    std::cout << "N√∫mero original: " << num << " (Binario: ...00101101)\n";
     std::cout << "K: " << k << "\n";
-    std::cout << "N˙mero resultante: " << resultado << "\n";
-    return EXIT_SUCCESS;
-}
+    std::cout << "N√∫mero resultante: " << resultado << "\n";
+    return EXIT_SUCCESS;}

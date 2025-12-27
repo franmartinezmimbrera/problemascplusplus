@@ -1,46 +1,33 @@
 // fichero areatriangulo2.cpp 
-// Este programa calcula el área de un triángulo con la fórmula de Herón
+// Este programa calcula el Ã¡rea de un triÃ¡ngulo con la fÃ³rmula de HerÃ³n
 #include <iostream>
 #include <cmath>    
 #include <cstdlib>
-// La función de Herón 
-double AreaTrianguloHeron(double l1, double l2, double l3) {
-    
+double AreaTrianguloHeron(double l1, double l2, double l3) {   
     double sp; 
-    if (l1 <= 0 || l2 <= 0 || l3 <= 0 || 
-        l1 + l2 <= l3 || l1 + l3 <= l2 || l2 + l3 <= l1) 
-    {
-        return 0.0f; 
-    }   
+    if (l1 <= 0 || l2 <= 0 || l3 <= 0 || l1 + l2 <= l3 || l1 + l3 <= l2 || l2 + l3 <= l1) {return 0.0f;}   
     sp = (l1 + l2 + l3) / 2.0f; 
     double area = std::sqrt(sp * (sp - l1) * (sp - l2) * (sp - l3));
     return area;
 }
-
 int main() {
-
     double l1x, l2x, l3x;
-    
-    std::cout << "Introduce lo que mide el primer lado del triángulo: ";
+    std::cout << "Introduce lo que mide el primer lado del triÃ¡ngulo: ";
     if (!(std::cin >> l1x)) {
-        std::cout << "ERROR: Entrada no válida (no es un número).\n";
+        std::cout << "ERROR: Entrada no vÃ¡lida (no es un nÃºmero).\n";
         return EXIT_FAILURE;
     }
-    std::cout << "Introduce lo que mide el segundo lado del triángulo: ";
+    std::cout << "Introduce lo que mide el segundo lado del triÃ¡ngulo: ";
     if (!(std::cin >> l2x)) {
-        std::cout << "ERROR: Entrada no válida (no es un número).\n";
+        std::cout << "ERROR: Entrada no vÃ¡lida (no es un nÃºmero).\n";
         return EXIT_FAILURE;
     }
-    std::cout << "Introduce lo que mide el tercer lado del triángulo: ";
+    std::cout << "Introduce lo que mide el tercer lado del triÃ¡ngulo: ";
     if (!(std::cin >> l3x)) {
-        std::cout << "ERROR: Entrada no válida (no es un número).\n";
+        std::cout << "ERROR: Entrada no vÃ¡lida (no es un nÃºmero).\n";
         return EXIT_FAILURE;
     }
     double area_final = AreaTrianguloHeron(l1x, l2x, l3x);
-    if (area_final > 0.0f) {
-        std::cout << "El área del triángulo es: " << area_final << "\n";
-    } else {
-        std::cout << "ERROR: Los lados introducidos NO forman un triángulo válido (la suma de dos lados debe ser mayor que el tercero, y todos deben ser positivos).\n";
-    }
-    return EXIT_SUCCESS;
-}
+    if (area_final > 0.0f) {std::cout << "El Ã¡rea del triÃ¡ngulo es: " << area_final << "\n";
+    }else {std::cout << "Los lados introducidos NO forman un triÃ¡ngulo vÃ¡lido(la suma de 2 lados debe ser > que el tercero, y todos deben ser >=0)\n";}
+    return EXIT_SUCCESS;}

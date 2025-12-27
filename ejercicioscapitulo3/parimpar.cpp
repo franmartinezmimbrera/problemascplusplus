@@ -1,14 +1,14 @@
 // fichero parimpar.cpp 
-// Este programa dice si un número es par o impar
+// Este programa dice si un nÃºmero es par o impar
 #include <iostream>
 #include <cstdlib>
 using namespace std;
 
 int main() {
    long long numero;
-   cout<< "Introduzca un número entero: ";
+   cout<< "Introduzca un nÃºmero entero: ";
    if ( !(cin>>numero) ) { 
-       cout << "ERROR: Entrada no válida (no se introdujo un número)." << endl;
+       cout << "ERROR: Entrada no vÃ¡lida (no se introdujo un nÃºmero)." << endl;
        return EXIT_FAILURE; 
    }
    if ( numero % 2 == 0 )

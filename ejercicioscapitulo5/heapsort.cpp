@@ -4,7 +4,7 @@
 #include <algorithm>  
 #include <cstdlib>    
 
-//Restaura la propiedad de Max-Heap en un sub·rbol.
+//Restaura la propiedad de Max-Heap en un sub√°rbol.
 template <typename T>
 void heapify(std::vector<T>& arr, int n, int i) {
     int largest = i; 
@@ -23,7 +23,7 @@ void heapify(std::vector<T>& arr, int n, int i) {
     }
 }
 
-//FunciÛn principal de Heapsort.
+//Funci√≥n principal de Heapsort.
 template <typename T>
 void heapSort(std::vector<T>& arr) {
     int n = arr.size();

@@ -6,9 +6,9 @@
 int main() {
 
     std::string nombre;
-    std::cout << "¡Hola! ¿Cómo te llamas?\n";
+    std::cout << "Â¡Hola! Â¿CÃ³mo te llamas?\n";
     std::getline(std::cin,nombre);
-    std::cout << "¿Qué tal estás " <<  nombre << "?" << std::endl;
+    std::cout << "Â¿QuÃ© tal estÃ¡s " <<  nombre << "?" << std::endl;
     
     return EXIT_SUCCESS;
 }

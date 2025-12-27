@@ -8,19 +8,19 @@
 
 int main() {
     
-    std::ofstream archivo("datos.txt"); 
+    std::ofstream fichero("datos.txt"); 
 
-    if (!archivo.is_open()) {
-        std::cerr << "Error al abrir/crear el archivo datos.txt" << std::endl;
+    if (!fichero.is_open()) {
+        std::cerr << "Error al abrir/crear el fichero datos.txt" << std::endl;
         return EXIT_FAILURE;
     }
 
-    archivo << "Esta es la primera línea." << std::endl;
-    archivo << "El número PI es aproximadamente " 
+    fichero << "Esta es la primera lÃ­nea." << std::endl;
+    fichero << "El nÃºmero PI es aproximadamente " 
             << std::fixed << std::setprecision(4) << 3.14159 << std::endl;
-    archivo << "Tercera línea de ejemplo." << std::endl;
+    fichero << "Tercera lÃ­nea de ejemplo." << std::endl;
 
-    archivo.close();
+    fichero.close();
 
     std::cout << "El archivo 'datos.txt' fue creado y escrito correctamente." << std::endl;
 

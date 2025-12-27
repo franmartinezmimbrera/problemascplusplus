@@ -1,5 +1,5 @@
 // fichero nkbits.cpp 
-// Procedimiento que escribe los últimos k bits de un número entero.
+// Procedimiento que escribe los Ãºltimos k bits de un nÃºmero entero.
 #include <iostream> 
 #include <climits> 
 #include <cstdlib>
@@ -10,7 +10,7 @@ void mostrar_ultimos_k_bits(int numero, int k) {
         return;
     }
     if (k > tamano_int) {k = tamano_int;}
-    std::cout << "Los Últimos " << k << " bits de " << numero << " son:";
+    std::cout << "Los Ãšltimos " << k << " bits de " << numero << " son:";
     for (int i = k - 1; i >= 0; i--) {     
         int bit = (numero >> i) & 1;
         std::cout << bit;

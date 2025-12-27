@@ -3,7 +3,7 @@
 #include <iostream> 
 #include <limits>   
 #include <cstdlib>
-//Función factorial iterativa
+//FunciÃ³n factorial iterativa
 long long factorial(long long n) {
     if (n == 0 || n == 1) {return 1;}
     long long resultado = 1;
@@ -12,7 +12,7 @@ long long factorial(long long n) {
     }
     return resultado;
 }
-//Función para calcular un número combinatorio
+//FunciÃ³n para calcular un nÃºmero combinatorio
 long long nCr(long long n, long long r) {
     if (r < 0 || r > n) {return 0;}
     long long fact_n = factorial(n);
@@ -25,7 +25,7 @@ long long nCr(long long n, long long r) {
     }
     return fact_n / (fact_r * fact_n_minus_r);
 }
-//Funció para calcular la potencia de una base y un exponente cualquiera dado
+//FunciÃ³ para calcular la potencia de una base y un exponente cualquiera dado
 long long calcular_potencia(long long base, int exponente) {
     long long resultado = 1;
     while (exponente > 0) {
@@ -36,19 +36,19 @@ long long calcular_potencia(long long base, int exponente) {
     }
     return resultado;
 }
-// Calcula la expansión del Binomio de Newton (a + b)^n.
+// Calcula la expansiÃ³n del Binomio de Newton (a + b)^n.
 void binomio_de_newton(long long a, long long b, int n) {
     if (n < 0 || n > 20) { 
         std::cerr << "Error: El exponente N debe ser no negativo y <= 20.\n";
         return;
     }
-    std::cout << "\nExpansión de (" << a << " + " << b << ")^" << n << ":\n";
+    std::cout << "\nExpansiÃ³n de (" << a << " + " << b << ")^" << n << ":\n";
     long long suma = 0;
     for (int k = 0; k <= n; k++) {
         long long coeficiente = nCr(n, k);
         
         if (coeficiente == -1) {
-            std::cerr << "Cáculo abortado debido a un error de factorial.\n";
+            std::cerr << "CÃ¡culo abortado debido a un error de factorial.\n";
             return;
         }
         long long potencia_a = calcular_potencia(a, n - k);
@@ -68,21 +68,21 @@ int main() {
 
     std::cout << "Introduce un numero entero no negativo para a: ";
     if (!(std::cin >> a) || a < 0) {
-        std::cerr << "Error: Entrada no válida para a (debe ser no negativa).\n";
+        std::cerr << "Error: Entrada no vÃ¡lida para a (debe ser no negativa).\n";
         return EXIT_FAILURE;
     }
     std::cout << "Introduce un numero entero no negativo para b: ";
     if (!(std::cin >> b) || b < 0) {
-        std::cerr << "Error: Entrada no válida para b (debe ser no negativa).\n";
+        std::cerr << "Error: Entrada no vÃ¡lida para b (debe ser no negativa).\n";
         return EXIT_FAILURE;
     }
     std::cout << "Introduce un numero entero no negativo para n: ";
     if (!(std::cin >> n) || n < 0) {
-        std::cerr << "Error: Entrada no válida para n (debe ser no negativo).\n";
+        std::cerr << "Error: Entrada no vÃ¡lida para n (debe ser no negativo).\n";
         return EXIT_FAILURE;
     }
     if (n > 20 || (a > 1 && n > 15) || (b > 1 && n > 15)) {
-        std::cout << "\nAdvertencia: La expansión de (a+b)^n es muy grande. El resultado total puede desbordar 'long long'.\n";
+        std::cout << "\nAdvertencia: La expansiÃ³n de (a+b)^n es muy grande. El resultado total puede desbordar 'long long'.\n";
     }
     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
     binomio_de_newton(a, b, n);

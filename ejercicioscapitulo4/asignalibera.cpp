@@ -2,7 +2,7 @@
 #include <iostream>  
 #include <cstdlib>   
 #include <new>    
-// Este ejercicio nos enseÒa a asignar y liberar memoria din·mica a un vector
+// Este ejercicio nos ense√±a a asignar y liberar memoria din√°mica a un vector
 int main() {
     
     int N = 5;
@@ -16,7 +16,7 @@ int main() {
         return EXIT_FAILURE;
     }
 
-    std::cout << "Vector Din·mico de " << N << " Elementos" << std::endl;
+    std::cout << "Vector Din√°mico de " << N << " Elementos" << std::endl;
     for (int i = 0; i < N; i++) {
         vector[i] = i * 10;
         std::cout << vector[i] << " ";

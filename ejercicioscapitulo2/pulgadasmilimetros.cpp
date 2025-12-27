@@ -1,5 +1,5 @@
 // fichero pulgadasmilimetros.cpp */
-// Este programa cambia pulgadas por milímetros
+// Este programa cambia pulgadas por milÃ­metros
 #include <iostream>
 #include <cstdlib>
 
@@ -12,16 +12,16 @@ int main() {
   
   cout<<"Introduzca valor en pulgadas: ";
   if (!(cin >> pul)) {
-        cout << "Error: El valor debe de ser un número.\n";
+        cout << "Error: El valor debe de ser un nÃºmero.\n";
         return EXIT_FAILURE; 
   } 
   if (pul < 0) {
-        cout << "Error: El valor debe ser un número positivo\n";
+        cout << "Error: El valor debe ser un nÃºmero positivo\n";
         return EXIT_FAILURE;
   }
 
   mil=FACTOR_CONVERSION*pul;
-  cout<<"El resultado en milímetros es:" << mil;   
+  cout<<"El resultado en milÃ­metros es:" << mil;   
 
   return EXIT_SUCCESS;  
 

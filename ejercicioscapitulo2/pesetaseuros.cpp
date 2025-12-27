@@ -1,5 +1,5 @@
 // fichero pesetaseuros.cpp 
-// Este programa realiza la conversión de pesetas a euros
+// Este programa realiza la conversiÃ³n de pesetas a euros
 #include <iostream>
 #include <iomanip> 
 #include <cstdlib>
@@ -12,7 +12,7 @@ int main() {
 
     std::cout << "Introduzca su valor en pesetas: ";
     if (!(std::cin >> pesetas)) {
-        std::cout << "ERROR: La entrada no es un número válido." << std::endl;        
+        std::cout << "ERROR: La entrada no es un nÃºmero vÃ¡lido." << std::endl;        
         return EXIT_FAILURE; 
     }
     if (pesetas < 0.0) {

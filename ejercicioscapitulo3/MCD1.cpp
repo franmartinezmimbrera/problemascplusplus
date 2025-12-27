@@ -1,5 +1,5 @@
 // fichero MCD1.cpp 
-// Este programa calcula el MCD dados 2 números mediante una función
+// Este programa calcula el MCD dados 2 nÃºmeros mediante una funciÃ³n
 
 #include <iostream>
 #include <cmath>    
@@ -25,12 +25,12 @@ int main() {
 
     std::cout << "\n   Introduzca valor de a: ";
     if (!(std::cin >> a)) {
-        std::cout << "ERROR: La entrada no es un número entero\n";
+        std::cout << "ERROR: La entrada no es un nÃºmero entero\n";
         return EXIT_FAILURE; 
     }
     std::cout << "\n  Introduzca valor de b: ";
     if (!(std::cin >> b)) {
-        std::cout << "ERROR: La entrada no es un número entero\n";
+        std::cout << "ERROR: La entrada no es un nÃºmero entero\n";
         return EXIT_FAILURE; 
     }
     a = std::abs(a); 

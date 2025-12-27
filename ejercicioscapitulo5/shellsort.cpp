@@ -4,7 +4,7 @@
 #include <cstdlib>    
 
 template <typename T>
-// Implementación del algoritmo Shellsort usando la secuencia de Knuth (3*h + 1)
+// ImplementaciÃ³n del algoritmo Shellsort usando la secuencia de Knuth (3*h + 1)
 void shellsort_knuth(std::vector<T>& arr) {
 
     int n = arr.size();

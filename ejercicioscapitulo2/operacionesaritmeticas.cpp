@@ -1,5 +1,5 @@
 // fichero operacionesaritmeticas.cpp 
-// Este programa realiza operaciones aritm閠icas dados 2 n鷐eros
+// Este programa realiza operaciones aritm茅ticas dados 2 n煤meros
 #include <iostream>
 #include <cstdlib>
 using namespace std;
@@ -8,21 +8,21 @@ int main() {
     double valor2;
     cout << "Introduce el valor primero: ";   
     if (!(cin >> valor1)) {
-        cout << "ERROR: El valor introducido no es un n鷐ero.\n";
+        cout << "ERROR: El valor introducido no es un n煤mero.\n";
         return EXIT_FAILURE; 
     }
     cout << "Introduce el valor segundo: ";
     if (!(cin >> valor2)) {
-        cout << "ERROR: El valor introducido no es un n鷐ero.\n";
+        cout << "ERROR: El valor introducido no es un n煤mero.\n";
         return EXIT_FAILURE; 
     }
     cout << "El resultado de la suma (" << valor1 << " + " << valor2 << ") es: " << valor1 + valor2 << "\n";
     cout << "El resultado de la resta (" << valor1 << " - " << valor2 << ") es: " << valor1 - valor2 << "\n";
-    cout << "El resultado de la multiplicaci髇 (" << valor1 << " * " << valor2 << ") es: " << valor1 * valor2 << "\n";
+    cout << "El resultado de la multiplicaci贸n (" << valor1 << " * " << valor2 << ") es: " << valor1 * valor2 << "\n";
     if (valor2 == 0.0) {
-        cout << "El resultado de la divisi髇 (" << valor1 << " / " << valor2 << ") es: INDEFINIDO (Divisi髇 por Cero)" << "\n";
+        cout << "El resultado de la divisi贸n (" << valor1 << " / " << valor2 << ") es: INDEFINIDO (Divisi贸n por Cero)" << "\n";
     } else {
-        cout << "El resultado de la divisi髇 (" << valor1 << " / " << valor2 << ") es: " << valor1 / valor2 << "\n";
+        cout << "El resultado de la divisi贸n (" << valor1 << " / " << valor2 << ") es: " << valor1 / valor2 << "\n";
     }
     return EXIT_SUCCESS;        
 }

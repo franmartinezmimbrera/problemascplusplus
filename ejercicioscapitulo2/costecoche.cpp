@@ -14,11 +14,11 @@ int main() {
 
    cout<<"Introduce el coste del vehiculo: ";
    if (!(cin >> costecoche)) {
-        cout << "Error: El valor debe de ser un número.\n";
+        cout << "Error: El valor debe de ser un nÃºmero.\n";
         return EXIT_FAILURE; 
    } 
    if (costecoche < 0.0) {
-        cout << "Error: El valor debe ser un número positivo\n";
+        cout << "Error: El valor debe ser un nÃºmero positivo\n";
         return EXIT_FAILURE;
    }
    pvantesimpuestos= costecoche*ganancia;

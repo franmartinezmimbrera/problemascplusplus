@@ -4,7 +4,7 @@
 #include <cstdlib>
 using namespace std;
 int main() {
-    cout << "Hola Mundo" << endl;
+    cout << "¡Hola, Mundo!" << endl;
     return EXIT_SUCCESS;
 }
 

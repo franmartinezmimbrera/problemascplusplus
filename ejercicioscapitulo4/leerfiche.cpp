@@ -8,21 +8,21 @@
 
 int main() {
     
-    std::ifstream archivo("datos.txt"); 
+    std::ifstream fichero("datos.txt"); 
     std::string linea;
 
-    if (!archivo.is_open()) {
-        std::cerr << "Error al abrir el archivo datos.txt" << std::endl;
+    if (!fichero.is_open()) {
+        std::cerr << "Error al abrir el fichero datos.txt" << std::endl;
         return EXIT_FAILURE;
     }
 
     std::cout << "\nContenido de 'datos.txt':" << std::endl;
     
-    while (std::getline(archivo, linea)) {
+    while (std::getline(fichero, linea)) {
         std::cout << linea << std::endl;
     }
 
-    archivo.close(); 
+    fichero.close(); 
     
     return EXIT_SUCCESS;
 }

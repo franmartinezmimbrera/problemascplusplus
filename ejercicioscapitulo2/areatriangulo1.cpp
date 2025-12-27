@@ -1,31 +1,31 @@
 // fichero areatriangulo1.cpp 
-// Este programa calcula el ·rea de un tri·ungulo rect·ngulo a partir de la base y la altura
+// Este programa calcula el √°rea de un tri√°ungulo rect√°ngulo a partir de la base y la altura
 #include <iostream>
 #include <cstdlib>
 #include <iomanip>
 using namespace std;
 int main() {
     double a,b,area;
-    cout<<"Introduce la base del tri·ngulo rect·ngulo:";
+    cout<<"Introduce la base del tri√°ngulo rect√°ngulo:";
     if (!(cin >> b)) {
-        cout << "Error: El valor debe de ser un n˙mero.\n";
+        cout << "Error: El valor debe de ser un n√∫mero.\n";
         return EXIT_FAILURE; 
     } 
     if (b <=0) {
-        cout << "Error: El valor debe ser un n˙mero > que 0\n";
+        cout << "Error: El valor debe ser un n√∫mero > que 0\n";
         return EXIT_FAILURE;
     }    
-    cout<<"Introduce la altura del tri·ngulo rect·ngulo: ";
+    cout<<"Introduce la altura del tri√°ngulo rect√°ngulo: ";
     if (!(cin >> a)) {
-        cout << "Error: El valor debe de ser un n˙mero.\n";
+        cout << "Error: El valor debe de ser un n√∫mero.\n";
         return EXIT_FAILURE; 
     } 
     if (a <=0 ) {
-        cout << "Error: El valor debe ser un n˙mero > que 0\n";
+        cout << "Error: El valor debe ser un n√∫mero > que 0\n";
         return EXIT_FAILURE;
     }
     area=(b*a)/2.0;
     cout << fixed << setprecision(2);
-    cout<<"El area del tri·ngulo rect·ngulo es:"<< area<< endl;
+    cout<<"El area del tri√°ngulo rect√°ngulo es:"<< area<< endl;
     return EXIT_SUCCESS;
 }

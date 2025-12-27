@@ -1,35 +1,31 @@
 // fichero ladotriangulo.cpp
-// Este programa calcula el valor del lado a de un tri·ngulo rect·ngulo usando el valor del lado b y la hipotenusa h 
+// Este programa calcula el valor del lado a de un tri√°ngulo rect√°ngulo usando el valor del lado b y la hipotenusa h 
 #include <iostream>
 #include <cmath>
 #include <cstdlib>
 int main() {
-
-    double a, b, h;
-    std::cout << "Introduzca el valor del lado \"b\" del tri·ngulo rect·ngulo: "; 
-    if (!(std::cin >> b)) {
-        std::cout << "Error: El valor debe ser un n˙mero.\n";
-        return EXIT_FAILURE; 
-    } 
-    if (b <= 0) {
-        std::cout << "Error: El lado 'b' debe ser un n˙mero mayor que 0.\n";
+   double a, b, h;
+ std::cout << "Introduzca el valor del lado \"b\" del tri√°ngulo rect√°ngulo: "; 
+   if (!(std::cin >> b)) {
+        std::cout << "Error: El valor debe ser un n√∫mero.\n";
+    return EXIT_FAILURE; 
+   } 
+   if (b <= 0) {
+        std::cout << "Error: El lado 'b' debe ser un n√∫mero mayor que 0.\n";
         return EXIT_FAILURE;
-    }
-    std::cout << "Introduzca el valor de la hipotenusa del tri·ngulo rect·ngulo: "; 
+   }
+std::cout << "Introduzca el valor de la hipotenusa del tri√°ngulo rect√°ngulo: "; 
     if (!(std::cin >> h)) {
-        std::cout << "Error: El valor debe ser un n˙mero.\n";
-        return EXIT_FAILURE; 
+   std::cout << "Error: El valor debe ser un n√∫mero.\n"; return EXIT_FAILURE; 
     }     
     if (h <= 0) {
-        std::cout << "Error: La hipotenusa debe ser un n˙mero mayor que 0.\n";
+        std::cout << "Error: La hipotenusa debe ser un n√∫mero mayor que 0.\n";
         return EXIT_FAILURE;
     }
     if (b >= h) {
-        std::cout << "Error: La hipotenusa (" << h << ") debe ser mayor que el cateto 'b' (" << b << ").\n";
-        return EXIT_FAILURE;
+        std::cout << "Error: La hipotenusa (" << h << ") debe ser mayor que el cateto 'b' (" << b << ").\n"; return EXIT_FAILURE;
     }
-
     a = std::sqrt((h * h) - (b * b));
-    std::cout << "El valor del lado \"a\" del tri·ngulo rect·ngulo es: " << a << "\n";
+std::cout << "El valor del lado a del tri√°ngulo rect√°ngulo es: " << a << "\n";
     return EXIT_SUCCESS;
 }

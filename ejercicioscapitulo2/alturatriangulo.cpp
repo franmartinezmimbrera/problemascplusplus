@@ -1,20 +1,26 @@
 // fichero alturatriangulo.cpp 
-// Este programa calcula la altura de un tri·ngulo equilatero
+// Este programa calcula la altura de un tri√°ngulo equilatero
 #include <iostream>
 #include <cmath>
 #include <cstdlib>
+
 int main() {
+
     double l,h;
-    std::cout<<"Introduzca lado de un tri·ngulo equil·tero: "; 
+
+    std::cout<<"Introduzca lado de un tri√°ngulo equil√°tero: "; 
+
     if (!(std::cin >> l)) {
-        std::cout << "Error: El valor debe ser un n˙mero.\n";
+        std::cout << "Error: El valor debe ser un n√∫mero.\n";
         return EXIT_FAILURE; 
     } 
     if (l <= 0) {
-        std::cout << "Error: El lado de un tri·ngulo equil·tero debe ser un n˙mero mayor que 0.\n";
+        std::cout << "Error: El lado de un tri√°ngulo equil√°tero debe ser un n√∫mero mayor que 0.\n";
         return EXIT_FAILURE;
     }
+
     h= (std::sqrt(3)*l)/2 ;
-    std::cout<<"La altura de un tri·ngulo equil·tero de lado " << l << " es: " << h << "\n";
+    std::cout<<"La altura de un tri√°ngulo equil√°tero de lado " << l << " es: " << h << "\n";
+
     return EXIT_SUCCESS;
 }

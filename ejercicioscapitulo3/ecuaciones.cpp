@@ -1,5 +1,5 @@
 // fichero ecuaciones.cpp 
-// Resuelve ecuaciones de segundo grado por la fórmula general para números R 
+// Resuelve ecuaciones de segundo grado por la fÃ³rmula general para nÃºmeros R 
 #include <iostream>
 #include <cmath>
 #include <cstdlib>
@@ -8,7 +8,7 @@ int main(void) {
     do {
         std::cout << "Ingrese coeficiente a: ";
         if (!(std::cin >> a)) {
-            std::cerr << "Error: la entrada no es un número válido\n";
+            std::cerr << "Error: la entrada no es un nÃºmero vÃ¡lido\n";
             return EXIT_FAILURE;
         }
         if (a == 0)
@@ -16,12 +16,12 @@ int main(void) {
     } while (a == 0);
     std::cout<<"Ingrese coeficiente b: ";
     if (!(std::cin>>b)){
-        std::cerr<<"Error: la entrada no es un número válido" <<std::endl;
+        std::cerr<<"Error: la entrada no es un nÃºmero vÃ¡lido" <<std::endl;
         return EXIT_FAILURE;
     };    
     std::cout<<"Ingrese coeficiente c: ";
     if (!(std::cin>>c)){
-        std::cerr<<"Error: la entrada no es un número válido" <<std::endl;
+        std::cerr<<"Error: la entrada no es un nÃºmero vÃ¡lido" <<std::endl;
         return EXIT_FAILURE;
     };    
     d = pow(b, 2)-4*a*c;

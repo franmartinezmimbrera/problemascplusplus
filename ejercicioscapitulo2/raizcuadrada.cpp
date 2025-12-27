@@ -1,20 +1,20 @@
 // fichero raizcuadrada.cpp 
-// Este programa calcula la raíz cuadrada de un número
+// Este programa calcula la raÃ­z cuadrada de un nÃºmero
 #include <iostream>
 #include <cmath>
 #include <cstdlib>
 int main() {
     double numero,resultado;
-    std::cout<<"Introduce el número a calcular la raíz cuadrada: ";
+    std::cout<<"Introduce el nÃºmero a calcular la raÃ­z cuadrada: ";
     if (!(std::cin >> numero)) {
-        std::cout << "Error: El valor debe de ser un número.\n";
+        std::cout << "Error: El valor debe de ser un nÃºmero.\n";
         return EXIT_FAILURE; 
     } 
     if (numero < 0) {
-        std::cout << "Error: El valor debe ser un número positivo\n";
+        std::cout << "Error: El valor debe ser un nÃºmero positivo\n";
         return EXIT_FAILURE;
     }
     resultado=std::sqrt(numero);    
-    std::cout<<"La raíz cuadrada de " << numero <<" es: "<< resultado <<"\n";
+    std::cout<<"La raÃ­z cuadrada de " << numero <<" es: "<< resultado <<"\n";
     return EXIT_SUCCESS;
 }

@@ -1,5 +1,5 @@
 // fichero cambiagrados.cpp */
-// Este programa cambia grados centígrados por Fahrenheit
+// Este programa cambia grados centÃ­grados por Fahrenheit
 
 #include <iostream>
 #include <cstdlib>
@@ -10,9 +10,9 @@ int main() {
 
   double c,f; 
   
-  cout<<"Introduzca valor en grados Centígrados : " ;
+  cout<<"Introduzca valor en grados CentÃ­grados : " ;
   if (!(cin >> c)) {
-        cout << "Error: El valor debe de ser un número.\n";
+        cout << "Error: El valor debe de ser un nÃºmero.\n";
         return EXIT_FAILURE; 
   } 
 

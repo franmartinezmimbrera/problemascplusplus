@@ -16,7 +16,7 @@ int main() {
         size_t len = cadena.size();        
         std::cout << "La cadena contiene " << len << " caracteres. \n"; 
         cadena += ".txt";
-        std::cout << "Concatenación: " << cadena << " \n";
+        std::cout << "ConcatenaciÃ³n: " << cadena << " \n";
     }
     return EXIT_SUCCESS;
 }

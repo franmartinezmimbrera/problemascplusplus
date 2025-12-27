@@ -11,18 +11,18 @@ int main() {
     std::cout << "Dinos tu Edad, peso y color favorito:\n";
     std::cout << "\n       Edad: ";
     if (!(std::cin >> edad)) {
-        std::cout << "Error: La edad debe ser un número entero.\n";
+        std::cout << "Error: La edad debe ser un nÃºmero entero.\n";
         return EXIT_FAILURE; 
     }
     std::cout << "\n       Peso: ";
     if (!(std::cin >> peso)) {
-        std::cout << "Error: El peso debe ser un número.\n";
+        std::cout << "Error: El peso debe ser un nÃºmero.\n";
         return EXIT_FAILURE;
     }
     std::cout << "\n Color favorito: ";
     std::getline(std::cin, color);
     std::cout << "El " << color << "!!! \n";
-    std::cout << "¿Cómo puede gustarte el " << color;
-    std::cout << " con " << edad  << " años y pesando " << peso << "Kg.?\n";
+    std::cout << "Â¿CÃ³mo puede gustarte el " << color;
+    std::cout << " con " << edad  << " aÃ±os y pesando " << peso << "Kg.?\n";
     return EXIT_SUCCESS;
 }

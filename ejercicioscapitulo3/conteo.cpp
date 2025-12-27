@@ -1,5 +1,5 @@
 // fichero conteo.cpp 
-// Este ejercicio nos presenta la conversión de cadenas a letras mayúsculas y contar sus vocales
+// Este ejercicio nos presenta la conversiÃ³n de cadenas a letras mayÃºsculas y contar sus vocales
 #include <iostream> 
 #include <cctype>   
 #include <climits>  
@@ -44,7 +44,7 @@ int main() {
  
     char lista_frases[NUM_FRASES][MAX_LONGITUD];
     int total_vocales = 0;
-    std::cout << "Introduce " << NUM_FRASES << " frases/líneas de texto:\n";
+    std::cout << "Introduce " << NUM_FRASES << " frases/lÃ­neas de texto:\n";
     
     for (int i = 0; i < NUM_FRASES; i++) {
         std::cout << "Frase " << i + 1 << ": ";        
@@ -62,12 +62,12 @@ int main() {
         convertir_a_mayusculas(lista_frases[i]);
         int vocales_frase = contar_vocales(lista_frases[i]);
         total_vocales += vocales_frase;
-        std::cout << "Frase " << i + 1 << " (MAYÚS): '" << lista_frases[i] 
+        std::cout << "Frase " << i + 1 << " (MAYÃšS): '" << lista_frases[i] 
                   << "' -> Vocales contadas: " << vocales_frase << "\n";
     }
 
     std::cout << "\n--- Resumen Final ---\n";
-    std::cout << "El número total de vocales en todas las frases es: " << total_vocales << "\n";
+    std::cout << "El nÃºmero total de vocales en todas las frases es: " << total_vocales << "\n";
 
     return EXIT_SUCCESS;
 }

@@ -1,5 +1,5 @@
 // fichero areacircunferencia.cpp 
-// Este programa calcula el ¡rea de una circunferencia
+// Este programa calcula el √Årea de una circunferencia
 #include <iostream>
 #include <cmath>      
 #include <cstdlib>
@@ -14,7 +14,7 @@ int main() {
     while (!entrada_valida) {
         std::cout << "Introduce el radio de la circunferencia >0: ";
         if (!(std::cin >> radio)) {
-            std::cout << "ERROR: La entrada no es un n˙mero v·lido.\n";
+            std::cout << "ERROR: La entrada no es un n√∫mero v√°lido.\n";
             continue;
         } 
         if (radio <= 0) {
@@ -23,6 +23,6 @@ int main() {
             entrada_valida = true;
         }
     }
-    std::cout << "El ·rea de la circunferencia es: " << AreaCircunferencia(radio) << "\n";
+    std::cout << "El √°rea de la circunferencia es: " << AreaCircunferencia(radio) << "\n";
     return EXIT_SUCCESS;
 }
