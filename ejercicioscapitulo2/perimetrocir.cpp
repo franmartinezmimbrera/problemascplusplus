@@ -12,7 +12,7 @@ int main() {
         return EXIT_FAILURE; 
     } 
     if (radio <= 0.0) {
-        cout << "Error: El radio debe ser un número >=0\n";
+        cout << "Error: El radio debe ser un número >0\n";
         return EXIT_FAILURE;
     }
     perimetro = 2 * PI * radio;

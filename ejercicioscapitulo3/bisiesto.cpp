@@ -6,8 +6,10 @@ using namespace std;
 int main() {
     int anio;
     cout<< "Introduzca un año: ";
-    if ( !(cin >> anio) ) 
+    if ( !(cin >> anio) ){ 
         cout << "ERROR:La entrada no es un número entero" << endl;
+       return EXIT_FAILURE;
+    }
     if ( (anio % 4 == 0 && anio % 100 != 0) || (anio % 400 == 0) )
         cout<< "ES BISIESTO" << endl; 
     else
